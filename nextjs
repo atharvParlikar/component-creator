@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import sys
+import os
+
+name = sys.argv[1]
+
+os.mkdir(f"./components/{name}")
+os.system(f"touch ./components/{name}/{name[0].upper() + name[1:]}.jsx")
+os.system(f'touch ./components/{name}/style.css')
